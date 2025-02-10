@@ -1,0 +1,30 @@
+-- Agenda
+    Comparing functions
+    Calculating Big Oh
+    Comparing Algorithms
+    Problem Constraints
+    Notations
+
+Hierarchy of Functions
+    Constant: e.g. : 1,100,10^500
+    logarithms: e.g. : log a (base b)
+    Polynomials: x,x^2,x^3 .. sqrt(N), N^1/2 ..
+    Exponential: 2^N, 3^N, 1.1^N
+    Factorials: n!
+    UnNamed  : N^N
+
+   Constants < logarithms < Polynomials < Exponential < Factorials < UnNamed
+
+ To run code faster we need less iterations
+
+ Suppose we have an function
+    def solve():
+        ToDo..
+
+ No. Of Iterations in this functions : 3*2^N + 50*N^3 + 30*N^2+ 7*log(N) + 200
+ For Time complexity we only need to consider the largest iteration,
+ excluding the constant in multiplier and addition : 2^N
+
+
+
+
