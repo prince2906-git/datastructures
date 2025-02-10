@@ -25,6 +25,38 @@ Hierarchy of Functions
  For Time complexity we only need to consider the largest iteration,
  excluding the constant in multiplier and addition : 2^N
 
+Q. f(n) = 3N + 6NlogN + 10^3
+Find O(f(n)) = ?  Big-Oh of f(n) = ?
+Ans : O(f(n)) = NlogN
+
+Explanation : N Vs. NlogN which is Larger
+    N.1 Vs N.logN
+    if we exclude N in multiple, then logN will be greater than 1(constant)
+   Hence NlogN is greater
+
+ Q. f(n) = 10^3
+ Find O(f(n)) = ?
+ Answer : O(1)
+ Explanation : Constant will always have 1 as a complexity
+
+Big-Oh is used to compare the performance of Algorithms.
+
+Function Performance Chart
+	                        N --->
+f(N)	                    10	100	1000 10000	100000	1000000
+1	                        1	 1	 1    1     	1	   1	Best Algorithm
+log(N)[base 2]	            3	 6	 9	 13     	16	   19
+sqrt(N)	                    3	 10  31	 100	   316	 1000
+N	                       10	100	1000 10000	 100000	 1000000
+N^2	                       10^2 10^4 10^5 10^6   10^7     10^8
+N^3	                       1000	              1000000	1000000000	1000000000000	1000000000000000	1000000000000000000
+2^N	1024	              1267650600228230000000000000000    	1.07151E+301	2^1000	2^100000	2^100000
+3^N	6 X 10^4	-	-	-	-	-
+N!	3 Million	-	-	-	-	-
+N^N	10 Billion	-	-	-	-	-
+
+
+Worst Case Complexity
 
 
 
