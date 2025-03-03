@@ -58,5 +58,41 @@ N^N	10 Billion	-	-	-	-	-
 
 Worst Case Complexity
 
+def solve(N):
+    if n%2 == 0:
+        for i in range(N):
+            print(i)
+    else:
+        for i in range(N):
+            for j in range(N):
+                print(i+j)
+
+It would have time complexity of n+n^2, i.e. O(n^2), if there is no "IF" conditional statement.
+So, If I break down the above I will get 2 different complexities
+    For Even : O(N)
+    Otherwise : O(N^2)
+ Here we have to be pessimistic, and consider the worst case , Time Complexity = O(N^2)
+
+
+Problem Constraints
+    Input Constraints:
+    We have seen in Hacker Earth, Hacker Rank or Leetcode, some input constraints are provided
+    Input Constraints : N<=10^6 --> 10^6 iterations / sec.
+    or -10^18 <= A[i] <= 10^18
+
+  From seeing above chart we can say, our code/solution will work/execute fine or not
+
+   If code doesn't finish in 1sec --> Time Limit Extended (TLE) error we will get.
+
+  Input range decides the data type.
+  In Python datatype is not required.
+
+Notations:
+    Big-Oh (o), Big Omga, Theta
+
+
+
+
+
 
 
